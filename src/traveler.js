@@ -17,7 +17,7 @@ class Traveler {
   }
 
   set isHealthy(boolean) {
-    return this._isHealthy = boolean;
+    this._isHealthy = boolean;
 
   }
 
@@ -28,10 +28,10 @@ class Traveler {
 
   eat() {
     if (this._food > 0) {
-      return this._food -= 1;
+      this._food -= 1;
     }
     if (this._food === 0) {
-      return this._isHealthy === false;
+      this._isHealthy = false;
     }
   }
 }
